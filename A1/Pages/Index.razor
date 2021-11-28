@@ -1,0 +1,28 @@
+@page "/"
+@inject NavigationManager NavigationManager
+
+<h1>Welcome to assignment 3 - Managing Adults</h1>
+
+<p>This blazor project is handed in by Bastian for assignment 3 in DNP</p>
+<br/>
+
+<Login/>
+<p>OBS! Login: admin, admin</p>
+
+@code{
+
+    // [CascadingParameter]
+    // protected Task<AuthenticationState> AuthStat { get; set; }
+    //
+    // protected override async Task OnInitializedAsync()
+    // {
+    //     await base.OnInitializedAsync();
+    //     var user = (await AuthStat).User;
+    //     if (!user.Identity.IsAuthenticated)
+    //     {
+    //         NavigationManager.NavigateTo($"/Login");
+    //         NavigationManager.NavigateTo($"/Login?returnUrl={Uri.EscapeDataString(NavigationManager.Uri)}");
+    //     }
+    // }
+
+}
